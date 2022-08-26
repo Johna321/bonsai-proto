@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import router from 'next/router';
 
 import Head from 'next/head';
 import TopBar from '../components/TopBar';
 import Publish from '../components/Publish';
+import { Router } from 'next/router';
 
 export default function Home() {
   const [publish, setPublish] = useState(false);
@@ -57,7 +59,7 @@ export default function Home() {
               <img className='shadow-lg mb-2' src='/exampletest.png' width='400'/>
             </div>
           <div className='flex justify-center items-center'>
-            <button className='rounded bg-blue-500 hover:bg-blue-700 px-6 py-2 m-2 text-lg text-white'>Edit</button>
+            <button onClick={() => router.push('/edit')} className='rounded bg-blue-500 hover:bg-blue-700 px-6 py-2 m-2 text-lg text-white'>Edit</button>
             <button onClick={() => setPublish(!publish)} className='rounded bg-blue-500 hover:bg-blue-700 px-6 py-2 m-2 text-lg text-white'>Publish</button>
           </div>
         </div>
