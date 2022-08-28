@@ -52,7 +52,7 @@ export default function Home() {
       </Head>
     
       <div className={blurClass}>
-      <TopBar />
+      <TopBar teacher={true} />
       <main className="flex h-[calc(100vh_-_70px)]">
         <div className="flex flex-col justify-center items-center h-full w-1/2 bg-slate-100">
             <div>

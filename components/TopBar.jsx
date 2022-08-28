@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function TopBar() {
+export default function TopBar({ teacher }) {
     return(
         <nav className="flex items-center justify-between flex-wrap p-3 border-b-2">
             <div className="block text-black text-sm">
-                <div className="font-bold">Mr. Test</div>
-                <div>United States Government</div>
+                <div className="font-bold">{teacher ? "Mr. Test" : "Jane Doe"}</div>
+                <div>{teacher ? "United States Government" : "Miami Palmetto Sen.."}</div>
             </div>
             <div className="block flex-grow flex items-center w-auto justify-center">
                 <div className="flex justify-center flex-grow">
