@@ -13,7 +13,7 @@ export default function Home() {
       //student.score = (student.q1.score + student.q2.score + student.q3.score) / 3
       return (
         <div key={student.name} className="flex my-2 border-2 w-full rounded-lg px-2 justify-around items-center">
-          <h1 className="text-lg text-green-500 font-bold">{student.score}</h1>
+          <h1 className="text-lg text-green-600 font-bold">{student.q1.score}</h1>
           <div className='flex w-1/3 space-x-4 items-center m-2'>
             <img className='rounded-full' src='/defaultprofile.jpg' width='50' height='50' />
             <h1 className="text-lg font-bold">{student.name}</h1>
