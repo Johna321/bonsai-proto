@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function TopBar({ teacher }) {
     return(
-        <nav className="flex items-center justify-between flex-wrap p-3 border-b-2">
+        <nav className="flex items-center justify-between flex-wrap p-3 bardrop z-30 bg-slate-100">
             <div className="block text-black text-sm">
                 <div className="font-bold">{teacher ? "Mr. Test" : "Jane Doe"}</div>
                 <div>{teacher ? "United States Government" : "Miami Palmetto Sen.."}</div>

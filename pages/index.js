@@ -63,7 +63,7 @@ export default function Home() {
       <div className={blurClass}>
       <TopBar teacher={true} />
       <main className="flex h-[calc(100vh_-_70px)]">
-        <div className="flex flex-col justify-center items-center h-full w-1/2 bg-slate-100">
+        <div className="flex flex-col justify-center z-0 items-center h-full w-1/2 leftdrop bg-slate-100">
             <div>
               <img className='shadow-lg mb-2' src='/exampletest.png' width='400'/>
             </div>
