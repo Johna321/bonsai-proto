@@ -8,4 +8,9 @@
 
 .leftdrop {
     box-shadow: 3px 0px 5px lightgray;    
+    background-color: #F4F4F4;
+}
+
+.user-shadow {
+    box-shadow: 0px 0px 8px #BBBCBC;
 }
