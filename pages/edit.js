@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import router from 'next/router';
 import Publish from '../components/Publish';
 import Question from '../components/Question';
+import { DataContext } from '../components/DataContext';
 
 export default function Edit(){
     const [publish, setPublish] = useState(false);
     const [showAdd, setShowAdd] = useState(false);
     const blurClass = publish ? 'blur-sm pointer-events-none select-none' : '';
+    // const { setShowScores } = useContext(DataContext);
     
     return(
         <>
@@ -59,8 +61,9 @@ export default function Edit(){
                     <div className='text-2xl flex justify-center items-center hover:cursor-pointer select-none rounded-full w-8 h-8 bg-green-600 p-2 text-white '>+</div>
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center mx-4 my-16 p-4 bg-white lg:w-[200px] border-2 shadow-lg h-[100px] rounded-xl'>
+            <div className='flex flex-col items-center justify-even mx-4 my-16 p-4 bg-white lg:w-[200px] border-2 shadow-lg h-[150px] rounded-xl'>
                 <button onClick={() => setPublish(true)} className='text-xl m-4 hover:text-green-500 hover:border-b-2 border-green-500'>Publish</button>
+                <button onClick={() => router.push({pathname: '/', query: {show: true}})} className='text-xl m-4 hover:text-green-500 hover:border-b-2 border-green-500'>Save</button>
             </div>
         </div>
         </div>
