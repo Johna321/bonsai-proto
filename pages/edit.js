@@ -19,7 +19,7 @@ export default function Edit(){
             <div className='mt-4 bg-white w-[800px]  border-2 shadow-lg'>
                 <div className='flex justify-between mx-16 mt-16'>
                     <div className=''>
-                        <h1 className='text-lg font-semibold'>Mr. Test's</h1>
+                        <h1 className='text-lg font-semibold'>Mr. Test&apos;s</h1>
                         <h1 className='text-lg font-semibold'>Period 6</h1>
                         <h1 className='text-lg font-semibold'>United States Government</h1>
                     </div>
@@ -36,19 +36,19 @@ export default function Edit(){
                     <div className='mt-2 ml-4'>
                         <div>
                             <input type='radio' id='radio-1' name='mc1' className=''/> 
-                            <label for='radio-1'>The kingdoms became more centralized.</label>
+                            <label htmlFor='radio-1'>The kingdoms became more centralized.</label>
                         </div>
                         <div>
                             <input type='radio' id='radio-2' name='mc1' className=''/> 
-                            <label for='radio-2'>Many kingdoms faced near destructions from nomadic tribesmen.</label>
+                            <label htmlFor='radio-2'>Many kingdoms faced near destructions from nomadic tribesmen.</label>
                         </div>
                         <div>
                             <input type='radio' id='radio-3' name='mc1' className=''/> 
-                            <label for='radio-3'>There was a resurgence of animism.</label>
+                            <label htmlFor='radio-3'>There was a resurgence of animism.</label>
                         </div>
                         <div>
                             <input type='radio' id='radio-4' name='mc1' className=''/> 
-                            <label for='radio-4'>Grain production increased from the advent of new agricultural methods.</label>
+                            <label htmlFor='radio-4'>Grain production increased from the advent of new agricultural methods.</label>
                         </div>
                     </div>
                 </Question>
