@@ -63,7 +63,7 @@ export default function Edit(){
             </div>
             <div className='flex flex-col items-center justify-even mx-4 my-16 p-4 bg-white lg:w-[200px] border-2 shadow-lg h-[150px] rounded-xl'>
                 <button onClick={() => setPublish(true)} className='text-xl m-4 hover:text-[#1CB000] navbutton border-[#1CB000]'>Publish</button>
-                <button onClick={() => router.push({pathname: '/', query: {show: true}})} className='text-xl m-4 hover:text-[#1CB000] navbutton border-[#1CB000]'>Save</button>
+                <button onClick={() => router.push({pathname: '/', query: {show: true}})} className='text-xl m-4 hover:text-[#1CB000] navbutton border-[#1CB000]'>Grade</button>
             </div>
         </div>
         </div>

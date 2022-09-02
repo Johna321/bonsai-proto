@@ -22,13 +22,13 @@ export default function Home() {
       //student.score = (student.q1.score + student.q2.score + student.q3.score) / 3
       return (
         <div key={student.name} className="flex my-2 w-full rounded-lg px-2 justify-between items-center user-shadow">
-          <div className='flex justify-around items-center w-3/4'>
-            {showScore ? <h1 className="text-lg text-[#1CB000] font-bold">{student.q1.score}</h1> : <h1 className="text-lg text-[#1CB000] font-bold">{student.score}</h1>}
+          {/*<div className={`flex ${showScore ? 'justify-around' : 'justify-end'} items-center w-3/4`}>*/}
+            {showScore ? <h1 className="text-lg ml-10 text-[#1CB000] font-bold">{student.q1.score}</h1> : <h1 className='text-lg ml-10 select-none text-white font-bold'>{student.q1.score}</h1>}
             <div className='flex w-1/3 space-x-4 items-center m-2'>
               <img className='rounded-full' src='/defaultprofile.jpg' width='50' height='50' />
               <h1 className="text-lg font-bold">{student.name}</h1>
             </div>
-          </div>
+          {/*</div>*/}
           <button dangerouslySetInnerHTML={{__html: '&#10247'}}></button>
         </div>
       );
@@ -70,11 +70,11 @@ export default function Home() {
               <img className='shadow-lg mb-2' src='/exampletest.png' width='400'/>
             </div>
           <div className='flex justify-between items-center'>
-            <button onClick={() => router.push('/edit')} className='rounded bg-blue-500 hover:bg-blue-700 w-[107px] px-6 py-2 m-2 mx-12 text-lg text-white'>Edit</button>
+            <button onClick={() => router.push('/edit')} className='rounded bg-blue-500 hover:bg-blue-700 w-[107px] px-6 py-2 m-2 mx-12 text-lg text-white'>Grade</button>
             <button onClick={() => setPublish(!publish)} className='rounded bg-blue-500 hover:bg-blue-700 w-[107px] px-6 py-2 m-2 mx-12 text-lg text-white'>Publish</button>
           </div>
         </div>
-        <div className="h-full w-1/2 flex flex-col items-center p-4 overflow-scroll">
+        <div className="h-full w-1/2 flex flex-col items-center p-4 overflow-scroll overflow-x-hidden">
           <h1 className="text-xl m-4">Responses</h1>
           <div className="flex flex-col w-11/12 items-center justify-center">
             {genScores(studentScores)}
