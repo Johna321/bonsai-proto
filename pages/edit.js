@@ -58,12 +58,12 @@ export default function Edit(){
                     </div>
                 </Question>
                 <div onMouseOver={() => setShowAdd(true)} onMouseLeave={() => setShowAdd(false)} className='h-2/5 flex opacity-0 hover:opacity-100 justify-center transition ease-in-out duration-100'>
-                    <div className='text-2xl flex justify-center items-center hover:cursor-pointer select-none rounded-full w-8 h-8 bg-green-600 p-2 text-white '>+</div>
+                    <div className='text-2xl flex justify-center items-center hover:cursor-pointer select-none rounded-full w-8 h-8 bg-[#1CB000] p-2 text-white '>+</div>
                 </div>
             </div>
             <div className='flex flex-col items-center justify-even mx-4 my-16 p-4 bg-white lg:w-[200px] border-2 shadow-lg h-[150px] rounded-xl'>
-                <button onClick={() => setPublish(true)} className='text-xl m-4 hover:text-green-500 hover:border-b-2 border-green-500'>Publish</button>
-                <button onClick={() => router.push({pathname: '/', query: {show: true}})} className='text-xl m-4 hover:text-green-500 hover:border-b-2 border-green-500'>Save</button>
+                <button onClick={() => setPublish(true)} className='text-xl m-4 hover:text-[#1CB000] navbutton border-[#1CB000]'>Publish</button>
+                <button onClick={() => router.push({pathname: '/', query: {show: true}})} className='text-xl m-4 hover:text-[#1CB000] navbutton border-[#1CB000]'>Save</button>
             </div>
         </div>
         </div>
